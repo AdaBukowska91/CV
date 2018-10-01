@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+.header-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+header {
+    padding: 2em;
+    background-size: cover;
+    background-image: url("/home/ada/Pulpit/CV/bg.jpg");
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+header section {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+main section {
+    border-bottom: 0.9px solid rgb(186, 186, 186);
+}
