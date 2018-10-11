@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body {
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.8px;
+    line-height: 1.8em;
+}
+
+article {
+    padding: 1em;
+}
+section {
+    margin: 1em;
+    padding: 1em;
+}
+
+header, main, footer {
+    margin: 0 auto;
 }
 
 .header-img {
@@ -29,6 +43,7 @@ header section {
 h1 {
     text-transform: uppercase;
     font-weight: normal;
+    margin: 1em 0;
 }
 
 h3 {
@@ -36,6 +51,135 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
-main section {
+main section:not(:last-child) {
     border-bottom: 0.9px solid rgb(186, 186, 186);
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.courses .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(106, 12, 35); 
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33%
+}
+
+.courses .description {
+    text-align: justify;
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%
+}
+
+.courses .description p {
+    padding-left: 1em;
+    margin-top: 0em;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 16px;
+}
+  
+.skills .column {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+
+h4 {
+    color: rgb(106, 12, 35); 
+}
+
+.skills .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills .column ul li:before{
+    content: "✔";
+    padding-right: 0.5em;
+    color: rgb(106, 12, 35); 
+}
+
+.underline {
+    text-decoration: underline;
+    color:rgb(186, 186, 186); 
+}
+
+.school {
+    color: rgb(106, 12, 35);
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.experience .title {
+    color: rgb(106, 12, 35); 
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33%
+}
+
+.experience .title p {
+    color: black;
+    margin-top: 3px;
+}
+
+.experience .description {
+    text-align: justify;
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%
+}
+
+footer {
+    text-align: right;
+    background-color: rgb(186, 186, 186); 
+    color: white;
+    padding: 1em;
+}
+
+a {
+    color: white;
+}
+
+a:hoover {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .courses {
+      display: block;
+    }
+
+    .courses .title, .courses .descrition {
+    max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .skills {
+      display: block;
+}
+  
+    .skills .column {
+      max-width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
 }
