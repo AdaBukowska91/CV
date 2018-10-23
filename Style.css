@@ -26,7 +26,7 @@ header, main, footer {
 header {
     padding: 2em;
     background-size: cover;
-    background-image: url("./AdaBukowska91/CV/bg.jpg");
+    background-image: url("./bg.jpg");
     background-position: center;
     font-family: 'Raleway', sans-serif;
     color: white;
