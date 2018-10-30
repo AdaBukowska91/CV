@@ -66,6 +66,11 @@ a .fab {
     text-align: center;
 }
 
+.fontawsome {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main section:not(:last-child) {
     border-bottom: 0.9px solid rgb(186, 186, 186);
 }
