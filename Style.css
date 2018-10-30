@@ -68,7 +68,7 @@ a .fab {
 
 .fontawsome {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main section:not(:last-child) {
